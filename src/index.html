@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <title>RSS | CSS Diner</title>
+</head>
+<body>
+  <main class="app-container">
+    <header class="app-header">CSS Diner</header>
+    <h2 class="order"></h2>
+    <div class="render-window">
+      <div class="table-wrapper">
+        <div class="table-surface"></div>
+        <div class="table"></div>
+      </div>
+      <div class="table-edge">
+        <div class="table-leg"></div>
+        <div class="table-leg"></div>
+      </div>
+    </div>
+    <div class="editor">
+      <div class="editor-pane">
+        <div class="editor-pane__header">
+          <span class="editor-pane-type">CSS Editor</span>
+          <span class="file-name">style.css</span>
+        </div>
+        <div class="file-window css-view">
+          <div class="line-numbers">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+          </div>
+          <input type="text" class="answer-input input-strobe" placeholder="Type in a CSS selector">
+          <div class="enter-button">enter</div>
+          <div>
+            { <br>
+            /* Styles would go here. */ <br>
+            }
+          </div>
+          <div class="help">
+            <br>
+            /* <br>
+            Type a number to skip to a level. <br>
+            Ex → "5" for level 5 <br>*/
+          </div>
+        </div>
+      </div>
+      <div class="editor-pane">
+        <div class="editor-pane__header">
+          <span class="editor-pane-type">HTML Viewer</span>
+          <span class="file-name">table.html</span>
+        </div>
+        <div class="file-window html-view">
+          <div class="line-numbers">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+          </div>
+          <div class="html-markup">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="app-footer">
+      <a href="https://rs.school/js/">
+        <img class="rss-course-logo" src="./assets/rss-logo.svg" alt="Rolling Scopes School logo">
+      </a>
+      <p class="copyright">
+        Inspired by <a href="https://twitter.com/flukeout" class="author-link">@flukeout</a>
+      </p>
+      <a href="https://github.com/midicable">
+        <img class="github-logo" src="./assets/github-logo.svg" alt="GitHub logo">
+      </a>
+    </footer>
+  </main>
+  <aside class="app-sidebar">
+    <div class="help-wrapper">
+      <h1 class="app-sidebar__header">
+      </h1>
+      <div class="level-nav">
+        <div class="nav-button button-prev"></div>
+        <div class="nav-button button-next"></div>
+      </div>
+      <div class="display-help">
+        <h3 class="selector-name"></h3>
+        <h2 class="title"></h2>
+        <h3 class="syntax"></h3>
+        <div class="hint"></div>
+        <h4 class="examples-title">Examples</h4>
+        <div class="examples"></div>
+      </div>
+    </div>
+    <div class="app-menu">
+    </div>
+    <div class="burger-menu-wrapper">
+      <div class="burger-menu">
+      </div>
+    </div>
+  </aside>
+</body>
+</html>

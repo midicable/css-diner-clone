@@ -1,0 +1,81 @@
+.app-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  transition: all .15s ease-in-out;
+  background: #1b1813;
+  left: 500px;
+  padding: 0;
+  width: 100%;
+}
+.app-menu_opened {
+  left: 0;
+}
+
+.app-menu__header {
+  margin: 0;
+  padding: 23px 0 14px 16px;
+  font-size: 22px;
+  font-weight: normal;
+  color: white;
+  opacity: .4;
+}
+
+.levels {
+  padding-bottom: 150px;
+}
+.level {
+  display: block;
+  cursor: pointer;
+  padding: 5px 12px 5px 22px;
+  color: #777;
+}
+.levels .current {
+  font-weight: bold;
+  background: rgba(255,255,255,.07);
+  color: #AAA;
+}
+.level:hover {
+  background: rgba(255,255,255,.05);
+}
+.level .checkmark {
+  position: relative;
+  display: inline-block;
+  margin-right: 14px;
+  width: 8px;
+  height: 13px;
+  opacity: 2;
+  border: solid 3px white;
+  border-width: 0 3px 3px 0;
+  opacity: .2;
+  top: -1px;
+  transform: rotate(40deg);
+}
+.completed .checkmark {
+  border: solid 3px #4cbb4a;
+  border-width: 0 3px 3px 0;
+  opacity: .55;
+}
+.level-number {
+  display: inline-block;
+  min-width: 24px;
+  opacity: .6;
+}
+
+.menu__reset-button {
+  display: block;
+  position: relative;
+  top: -20px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 9px 0 11px 0;
+  border: solid 2px rgba(255,255,255,.2);
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255,255,255,.4);
+}
+.menu__reset-button:hover {
+  cursor: pointer;
+  background: rgba(255,255,255,.05);
+}

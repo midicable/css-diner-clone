@@ -1,0 +1,217 @@
+.render-window {
+  transform: translate3d(0,0,0);
+  perspective: 400px;
+  text-align: center;
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+.table-wrapper {
+  position: relative;
+  width: 600px;
+  min-height: 142px;
+  margin: 10px auto 0 auto;
+  opacity: 1;
+  transform: rotateX(20deg);
+  transform-origin: bottom;
+  z-index: 9999;
+}
+.table {
+  display: inline-block;
+  position: relative;
+  min-height: 142px;
+  width: 100%;
+  padding: 15px 15px 22px 15px;
+  transform-style: preserve-3d;
+  outline: solid 1px transparent;
+  z-index: 999;
+  white-space: nowrap;
+}
+.table-surface {
+  box-shadow: 0px 40px 10px rgba(0,0,0,.2);
+  background: linear-gradient(#dd992d,#cd8c26);
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+}
+.table-edge {
+  width: 600px;
+  height: 15px;
+  margin: 0 auto 10px auto;
+  background: #ac741c;
+  transform: rotateX(-40deg);
+  transform-origin: top;
+}
+.table-leg {
+  width: 24px;
+  height: 10px;
+  background: #84570f;
+  position: absolute;
+  top: 15px;
+}
+.table-leg:first-child {
+  left: 20px;
+}
+.table-leg:last-child {
+  right: 20px;
+}
+
+plate, bento {
+  box-shadow: 0px 8px 0px rgba(0,0,0,.1);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  position: relative;
+}
+
+plate {
+
+  border-bottom: solid 5px #DDD;
+  background: white;
+  border-radius: 100px;
+}
+plate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - 32px);
+  top: calc(50% - 32px);
+  height: 65px;
+  width: 65px;
+  border-radius: 60px;
+  border-top: solid 6px #CCC;
+  opacity: .4;
+  background: rgba(255,255,255,1);
+}
+
+#fancy::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 44px);
+  height: 68px;
+  width: 74px;
+  border-radius: 60px;
+  border: solid 10px #009ff2;
+  opacity: .4;
+}
+
+bento {
+  background: brown;
+  position: relative;
+  border: solid 3px #711c12;
+  border-width: 20px 2px;
+}
+bento::before {
+  content: "";
+  position: absolute;
+  width: calc(100%);
+  top: 0;
+  left: 0;
+  border: solid 10px rgba(0,0,0,.1);
+  border-width: 10px 0 0 0px;
+}
+
+apple {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 20px 10px;
+  border-radius: 100px;
+  border-width: 2px 4px 15px 4px;
+  border-style: solid;
+  border-color: #ab1212;
+  background: #e41919;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+}
+apple.small {
+  height: 30px;
+  width: 30px;
+  border-width: 2px 4px 8px 4px;
+  margin: 30px 10px;
+}
+apple::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,.3);
+  height: 30%;
+  width: 30%;
+  top: 0px;
+  left: calc(50% - 15%);
+  border-radius: 100px;
+}
+bento apple.small {
+  top: -20px;
+  left: calc(50% - 45px);
+}
+
+pickle {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 20px);
+  background: #179837;
+  width: 25px;
+  border-radius: 30px;
+  display: inline-block;
+  border: solid 2px #025a18;
+  border-width: 2px 2px 9px 2px;
+  margin: 20px 10px;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  display: inline-block;
+  margin: 0 10px;
+  height: 60px;
+}
+pickle.small {
+  height: 40px;
+  width: 18px;
+  border-width: 1px 2px 6px 2px;
+  margin: 30px 10px;
+}
+
+orange {
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 20px 10px;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 2px 4px 15px 4px;
+  box-shadow: 0px 5px 0px rgba(0,0,0,.2);
+  background: orange;
+  border-color: #bd6e07;
+}
+orange::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,.3);
+  height: 30%;
+  width: 30%;
+  top: 0px;
+  left: calc(50% - 15%);
+  border-radius: 100px;
+}
+plate orange {
+  top: calc(50% - 50px);
+}
+orange.small {
+  height: 30px;
+  width: 30px;
+  border-width: 2px 4px 8px 4px;
+  margin: 30px 10px;
+}
+plate orange.small {
+  left: calc(50% - 25px);
+}
+bento orange.small {
+  top: -20px;
+  left: calc(50% - 25px);
+}

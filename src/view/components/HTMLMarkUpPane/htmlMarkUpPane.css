@@ -1,0 +1,21 @@
+.html-view {
+  background: rgba(0,0,0,.3);
+}
+
+.html-view .line-numbers {
+  color: #666;
+  border-right: solid 1px #333;
+}
+
+.html-markup {
+  z-index: 1;
+  font-family: menlo;
+  line-height: 150%;
+  color: rgba(255,255,255,.3);
+}
+.html-markup div {
+  padding-left: 20px;
+}
+.html-markup > div {
+  padding-left: 0px;
+}
